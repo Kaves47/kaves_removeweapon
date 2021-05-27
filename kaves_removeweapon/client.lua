@@ -45,7 +45,6 @@ Weapons = {  -- Blacklistte bulunan silahları buraya giriyoruz.Silah kodlarına
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(500)
-        local player = PlayerPedId()
 		for k,v in pairs(Weapons) do
 			local player = PlayerPedId()
 			local weapon = GetHashKey(v)
